@@ -1,4 +1,5 @@
 # vue-chartjs-testbed
+<<<<<<< HEAD
 
 ## Project setup
 ```
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+Testbed for Vue Chartjs
+>>>>>>> a1eb67f343bda2850a0231a41b66cdb633f717e5

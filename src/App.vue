@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Chart</h1>
+    <v-container>
+      <v-row justify="space-around">
+        <v-col
+          v-for="elevation in elevations"
+          :key="elevation"
+          cols="12"
+          md="4"
+          style="float:left; padding-left:30px"
+        >
+          <Chart />
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Chart from './components/Chart.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Chart
+  },
+  data: () => ({
+    elevations: [1, 2, 3, 4, 5, 6],
+  }),
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

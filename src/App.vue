@@ -1,26 +1,41 @@
 <template>
-  <div style="padding-left:5px">
-    <h1>Working Activities</h1>
-    <v-container fluid>
+  <div>
+    <v-container>
       <v-row>
-        <v-col>
-          <Pie />
-        </v-col>
-        <v-col>
-          <Pie />
-        </v-col>
-        <v-col>
-          <Bar />
-        </v-col>
+        <v-card
+          class="mx-auto"
+          max-width="344"
+          outlined
+        >
+          <v-list-item three-line>
+            <v-list-item-content>
+              <div class="overline mb-4">OVERLINE</div>
+              <v-list-item-title class="headline mb-1">Headline 5</v-list-item-title>
+              <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-card>
       </v-row>
-      <v-row>
-        <v-col>
-          <Bar />
-        </v-col>
-        <v-col>
+      <v-row
+        justify="center"
+        no-gutters
+      >
+        <v-col cols="2">
           <Pie />
         </v-col>
-        <v-col>
+        <v-col cols="2">
+          <Pie />
+        </v-col>
+        <v-col cols="2">
+          <Bar />
+        </v-col>
+        <v-col cols="2">
+          <Bar />
+        </v-col>
+        <v-col cols="2">
+          <Pie />
+        </v-col>
+        <v-col cols="2">
           <Pie />
         </v-col>
       </v-row>
@@ -42,9 +57,3 @@ export default {
   }),
 }
 </script>
-<style>
-.wrapper v-col {
-  display: flex;
-  flex: 1;
-}
-</style>

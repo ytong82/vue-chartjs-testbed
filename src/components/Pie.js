@@ -6,7 +6,7 @@ import {
 export default {
   extends: Pie,
   mixins: [mixins.reactiveProp],
-  props: ['chartData', 'options'],
+  props: ['chartData'],
   data() {
     return {
       options: {

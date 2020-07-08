@@ -6,7 +6,7 @@ import {
 export default {
   extends: Bar,
   mixins: [mixins.reactiveProp],
-  props: ['chartData', 'options'],
+  props: ['chartData'],
   data() {
     return {
       options: {

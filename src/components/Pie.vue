@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 16%; float:left">
+  <div>
     <pie :chart-data="datacollection">
     </pie>
   </div>

@@ -1,14 +1,14 @@
 <template>
-  <div style="height:450px; width:450px">
-    <chart :chart-data="datacollection"></chart>
+  <div style="float:left">
+    <bar :chart-data="datacollection"></bar>
   </div>
 </template>
 
 <script>
-import Chart from "./Chart.js"
+import Bar from "./Bar.js"
 export default {
   components: {
-    Chart
+    Bar
   },
   data() {
     return {

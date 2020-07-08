@@ -1,16 +1,16 @@
 <template>
-  <div>
-    <h1>Chart</h1>
-    <v-container>
-      <v-row justify="space-around">
-        <v-col
-          v-for="elevation in elevations"
-          :key="elevation"
-          cols="12"
-          md="4"
-          style="float:left; padding-left:30px"
-        >
-          <Chart />
+  <div style="padding-left:5px">
+    <h1>Working Activities</h1>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <Bar />
+        </v-col>
+        <v-col>
+          <Bar />
+        </v-col>
+        <v-col>
+          <Bar />
         </v-col>
       </v-row>
     </v-container>
@@ -18,15 +18,20 @@
 </template>
 
 <script>
-import Chart from './components/Chart.vue'
+import Bar from './components/Bar.vue'
 
 export default {
   name: 'App',
   components: {
-    Chart
+    Bar
   },
   data: () => ({
-    elevations: [1, 2, 3, 4, 5, 6],
   }),
 }
 </script>
+<style>
+.wrapper v-col {
+  display: flex;
+  flex: 1;
+}
+</style>

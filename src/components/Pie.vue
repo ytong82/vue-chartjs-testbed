@@ -30,7 +30,7 @@ export default {
         datasets: [
           {
             backgroundColor: ["#f87979", "#f9ff33", "#3368ff"],
-            data: [70, 20, 50]
+            data: [60, 60, 60]
           }
         ]
       };

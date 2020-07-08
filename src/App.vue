@@ -4,13 +4,24 @@
     <v-container fluid>
       <v-row>
         <v-col>
-          <Bar />
+          <Pie />
+        </v-col>
+        <v-col>
+          <Pie />
         </v-col>
         <v-col>
           <Bar />
         </v-col>
+      </v-row>
+      <v-row>
         <v-col>
           <Bar />
+        </v-col>
+        <v-col>
+          <Pie />
+        </v-col>
+        <v-col>
+          <Pie />
         </v-col>
       </v-row>
     </v-container>
@@ -19,11 +30,13 @@
 
 <script>
 import Bar from './components/Bar.vue'
+import Pie from './components/Pie.vue'
 
 export default {
   name: 'App',
   components: {
-    Bar
+    Bar,
+    Pie
   },
   data: () => ({
   }),

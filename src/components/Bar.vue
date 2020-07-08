@@ -1,5 +1,5 @@
 <template>
-  <div style="float:left">
+  <div style="width:16%; float:left">
     <bar :chart-data="datacollection"></bar>
   </div>
 </template>

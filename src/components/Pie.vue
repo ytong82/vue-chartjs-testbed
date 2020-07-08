@@ -1,0 +1,40 @@
+<template>
+  <div style="width: 16%; float:left">
+    <pie :chart-data="datacollection">
+    </pie>
+  </div>
+</template>
+
+<script>
+import Pie from "./Pie.js"
+export default {
+  components: {
+    Pie
+  },
+  data() {
+    return {
+      datacollection: null
+    };
+  },
+  mounted() {
+    this.fillData();
+  },
+  methods: {
+    fillData() {
+      this.datacollection = {
+        labels: [
+          "Red",
+          "Yellow",
+          "Blue"
+        ],
+        datasets: [
+          {
+            backgroundColor: ["#f87979", "#f9ff33", "#3368ff"],
+            data: [70, 20, 50]
+          }
+        ]
+      };
+    },
+  }
+};
+</script>
